@@ -1,0 +1,50 @@
+html{
+    font-size: 100%;
+    line-height: 2rem; 
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body > div {
+    margin: 2% auto 0;
+    max-width: 720px;
+}
+.tab-pane {
+    display: flex;
+    color: rgb(190, 39, 147);
+    font-size: 2rem;
+
+}
+.tab {
+    text-align: center;
+    cursor: pointer;
+    padding: 16px 20px 11px 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 5px solid transparent;
+    opacity: 0.6;
+    transition: all 0.5s ease;
+    position: relative;
+    min-width: 80px;
+}
+.tab:hover{
+    background-color: rgba(194, 53, 100, 0.05);
+    opacity: 1;
+    border-color: rgba(194, 53, 100, 0.1);
+}
+.tab-content{
+    padding: 28px 0;
+}
+.tab.active{
+    opacity: 1;
+    border-bottom: 5px solid rgb(190, 39, 147);
+    border-radius: 3px;
+}
+.content {
+    display: none; 
+}
+.content.active {
+    display: block;
+}
